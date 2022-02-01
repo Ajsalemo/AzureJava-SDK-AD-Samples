@@ -13,7 +13,7 @@ public class App {
     private static String webAppName = System.getenv("AZURE_WEB_APP_NAME");
     private static String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
     // This is in the form of
-    // "/subscriptions/{AZURE_SUBSCRIPTION_ID}/resourceGroups/{AZURE_RESOURCE_GROU_NAME}/providers/Microsoft.Web/serverfarms/{AZURE_APP_SERVICE_PLAN_NAME}"
+    // "/subscriptions/{AZURE_SUBSCRIPTION_ID}/resourceGroups/{AZURE_RESOURCE_GROUP_NAME}/providers/Microsoft.Web/serverfarms/{AZURE_APP_SERVICE_PLAN_NAME}"
     private static String appServicePlanId = System.getenv("AZURE_APP_SERVICE_PLAN_ID");
 
     public static void createWebApp(AzureResourceManager azureResourceManager, AppServicePlan appServicePlan) {
