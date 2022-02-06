@@ -1,4 +1,4 @@
-package com.createstoragecontainer.azurejavasdk;
+package com.createstorageaccount.azurejavasdk;
 
 import com.azure.core.credential.TokenCredential;
 import com.azure.core.http.policy.HttpLogDetailLevel;
@@ -9,8 +9,8 @@ import com.azure.identity.DefaultAzureCredentialBuilder;
 import com.azure.resourcemanager.AzureResourceManager;
 
 public class App {
-    private static String storageAccountName = System.getenv("AZURE_STORAGE_ACCOUNT_NAME");
-    private static String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
+    private static final String storageAccountName = System.getenv("AZURE_STORAGE_ACCOUNT_NAME");
+    private static final String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
 
     public static void createStorageAccount(AzureResourceManager azureResourceManager) {
         System.out.println("Creating a Storage Account named " + storageAccountName);

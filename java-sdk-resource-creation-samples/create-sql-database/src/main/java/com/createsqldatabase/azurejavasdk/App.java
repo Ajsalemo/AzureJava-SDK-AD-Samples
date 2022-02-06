@@ -10,11 +10,11 @@ import com.azure.resourcemanager.AzureResourceManager;
 import com.azure.resourcemanager.sql.models.SqlServer;
 
 public class App {
-    private static String sqlServerName = System.getenv("AZURE_SQL_SERVER_NAME");
-    private static String sqlDatabaseName = System.getenv("AZURE_SQL_DATABASE_NAME");
-    private static String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
-    private static String administratorLogin = System.getenv("AZURE_SQL_SERVER_ADMIN_LOGIN");
-    private static String administratorPassword = System.getenv("AZURE_SQL_SERVER_ADMIN_PASSWORD");
+    private static final String sqlServerName = System.getenv("AZURE_SQL_SERVER_NAME");
+    private static final String sqlDatabaseName = System.getenv("AZURE_SQL_DATABASE_NAME");
+    private static final String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
+    private static final String administratorLogin = System.getenv("AZURE_SQL_SERVER_ADMIN_LOGIN");
+    private static final String administratorPassword = System.getenv("AZURE_SQL_SERVER_ADMIN_PASSWORD");
 
     public static void createSqlServerAndDatabase(AzureResourceManager azureResourceManager) {
         System.out.println("Creating a server named " + sqlServerName);

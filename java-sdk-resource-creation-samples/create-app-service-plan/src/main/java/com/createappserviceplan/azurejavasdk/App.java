@@ -11,8 +11,8 @@ import com.azure.resourcemanager.appservice.models.OperatingSystem;
 import com.azure.resourcemanager.appservice.models.PricingTier;
 
 public class App {
-    private static String appServicePlanName = System.getenv("AZURE_APP_SERVICE_PLAN_NAME");
-    private static String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
+    private static final String appServicePlanName = System.getenv("AZURE_APP_SERVICE_PLAN_NAME");
+    private static final String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
 
     public static void createAppServicePlan(AzureResourceManager azureResourceManager) {
         System.out.println("Creating an App Service Plan with name: " + appServicePlanName);

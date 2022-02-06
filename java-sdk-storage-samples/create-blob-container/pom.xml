@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.createstoragecontainer.azurejavasdk</groupId>
-  <artifactId>create-storage-container</artifactId>
+  <groupId>com.createblobcontainer.azurejavasdk</groupId>
+  <artifactId>create-blob-container</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>create-storage-container</name>
+  <name>create-blob-container</name>
   <url>http://maven.apache.org</url>
   <properties>
     <java.version>11</java.version>
@@ -59,7 +60,7 @@
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>com.createstoragecontainer.azurejavasdk.App</mainClass>
+                  <mainClass>com.createblobcontainer.azurejavasdk.App</mainClass>
                 </manifest>
               </archive>
             </configuration>
