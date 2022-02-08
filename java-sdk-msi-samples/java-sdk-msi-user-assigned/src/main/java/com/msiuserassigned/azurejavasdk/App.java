@@ -26,7 +26,8 @@ public class App {
     public static void main(String[] args) {
         try {
             final TokenCredential credential = new DefaultAzureCredentialBuilder()
-                    .managedIdentityClientId(msiUserIdentityClientId).build();
+                    .managedIdentityClientId(msiUserIdentityClientId)
+                    .build();
 
             retrieveKeyVaultSecret(credential);
         } catch (Exception e) {
