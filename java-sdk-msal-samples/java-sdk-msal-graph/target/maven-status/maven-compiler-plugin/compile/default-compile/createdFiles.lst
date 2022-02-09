@@ -1,0 +1,5 @@
+com\microsoft\azuresamples\msal4j\msidentityspringbootwebapp\Utilities.class
+com\microsoft\azuresamples\msal4j\msidentityspringbootwebapp\Utilities$GraphAuthenticationProvider.class
+com\microsoft\azuresamples\msal4j\msidentityspringbootwebapp\SampleController.class
+com\microsoft\azuresamples\msal4j\msidentityspringbootwebapp\MsIdentitySpringBootWebappApplication.class
+com\microsoft\azuresamples\msal4j\msidentityspringbootwebapp\SecurityConfig.class
