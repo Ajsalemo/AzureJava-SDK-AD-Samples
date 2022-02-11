@@ -2,6 +2,8 @@
 
 This sample uses the Azure Java SDK with [`DefaultAzureCredential`](https://docs.microsoft.com/en-us/azure/developer/java/sdk/identity-azure-hosted-auth#default-azure-credential) to use System Assigned Identity.
 
+You can alternatively use [ManagedIdentityCredential](https://docs.microsoft.com/en-us/azure/developer/java/sdk/identity-azure-hosted-auth#managed-identity-credential) as well.
+
 You can use this reference [here](https://docs.microsoft.com/en-us/java/api/overview/azure/identity-readme?view=azure-java-stable#authenticating-in-azure-with-managed-identity) for Managed Identity concepts. You can use this link [here](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=portal%2Cdotnet#add-a-system-assigned-identity) to set up a System Assigned Identity or [this link](https://docs.microsoft.com/en-us/azure/app-service/overview-managed-identity?tabs=portal%2Cdotnet#add-a-user-assigned-identity) to set up a User Assigned Identity.
 
 ## Running the sample
