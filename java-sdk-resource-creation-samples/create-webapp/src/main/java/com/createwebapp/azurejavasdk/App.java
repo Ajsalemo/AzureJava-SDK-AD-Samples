@@ -12,9 +12,11 @@ import com.azure.resourcemanager.appservice.models.RuntimeStack;
 public class App {
     private static final String webAppName = System.getenv("AZURE_WEB_APP_NAME");
     private static final String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
+    private static final String appServicePlanName = System.getenv("AZURE_APP_SERVICE_PLAN_NAME");
+    private static final String subscriptionId = System.getenv("AZURE_SUBSCRIPTION_ID");
     // This is in the form of
     // "/subscriptions/{AZURE_SUBSCRIPTION_ID}/resourceGroups/{AZURE_RESOURCE_GROUP_NAME}/providers/Microsoft.Web/serverfarms/{AZURE_APP_SERVICE_PLAN_NAME}"
-    private static final String appServicePlanId = System.getenv("AZURE_APP_SERVICE_PLAN_ID");
+    private static final String appServicePlanId = "/subscriptions/" + subscriptionId + "/resourceGroups/" + rgName + "/providers/Microsoft.Web/serverfarms/" + appServicePlanName;
 
     public static void createWebApp(AzureResourceManager azureResourceManager, AppServicePlan appServicePlan) {
         System.out.println("Creating a web app with name: " + webAppName);
