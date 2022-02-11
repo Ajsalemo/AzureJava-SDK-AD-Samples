@@ -17,8 +17,6 @@ import com.azure.storage.blob.BlobServiceClient;
 import com.azure.storage.blob.BlobServiceClientBuilder;
 
 public class App {
-    private static final String rgName = System.getenv("AZURE_RESOURCE_GROUP_NAME");
-    private static final String storageAccountName = System.getenv("AZURE_STORAGE_ACCOUNT_NAME");
     private static final String storageBlobContainerName = System.getenv("AZURE_STORAGE_BLOB_CONTAINER_NAME");
     private static final String storageAccountEndpoint = System.getenv("AZURE_STORAGE_ACCOUNT_ENDPOINT");
     private static final String dir = System.getenv("FILE_DIR");
@@ -27,7 +25,8 @@ public class App {
     private static final String content = "This is a logfile written with id: " + id;
 
     public static void uploadToBlobContainer(TokenCredential credential) {
-        // Reference - https://docs.microsoft.com/en-us/java/api/overview/azure/storage-blob-readme?view=azure-java-stable#create-a-blobserviceclient
+        // Reference -
+        // https://docs.microsoft.com/en-us/java/api/overview/azure/storage-blob-readme?view=azure-java-stable#create-a-blobserviceclient
         BlobServiceClient blobServiceClient = new BlobServiceClientBuilder()
                 .endpoint(storageAccountEndpoint)
                 .credential(credential)
@@ -50,7 +49,8 @@ public class App {
 
     public static void main(String[] args) {
         try {
-            // Reference - https://docs.microsoft.com/en-us/java/api/overview/azure/storage-blob-readme?view=azure-java-stable#authenticate-with-azure-identity
+            // Reference -
+            // https://docs.microsoft.com/en-us/java/api/overview/azure/storage-blob-readme?view=azure-java-stable#authenticate-with-azure-identity
             final AzureProfile profile = new AzureProfile(AzureEnvironment.AZURE);
             final TokenCredential credential = new DefaultAzureCredentialBuilder()
                     .authorityHost(profile.getEnvironment().getActiveDirectoryEndpoint())
